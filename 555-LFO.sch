@@ -1,0 +1,443 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 555-LFO-rescue:NE555P-Timer U1
+U 1 1 610A9D9E
+P 3350 3800
+F 0 "U1" H 3050 4200 50  0000 C CNN
+F 1 "NE555P" H 3600 4200 50  0000 C CNN
+F 2 "00_Mes_empreintes:DIP-8_Socket" H 4000 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4200 3400 50  0001 C CNN
+	1    3350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 610AA2EC
+P 4600 2900
+F 0 "R3" H 4670 2946 50  0000 L CNN
+F 1 "1k" V 4600 2850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4530 2900 50  0001 C CNN
+F 3 "~" H 4600 2900 50  0001 C CNN
+	1    4600 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 610AC4E8
+P 6000 3600
+F 0 "C3" V 5850 3600 50  0000 C CNN
+F 1 "100uf" V 5750 3600 50  0000 C CNN
+F 2 "00_Mes_empreintes:CP_Radial_5*11" H 6038 3450 50  0001 C CNN
+F 3 "~" H 6000 3600 50  0001 C CNN
+	1    6000 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 3800 4600 3900
+Wire Wire Line
+	3850 4000 3850 4275
+Wire Wire Line
+	2850 3600 2750 3600
+$Comp
+L Device:CP C1
+U 1 1 610AEBE8
+P 3100 5250
+F 0 "C1" H 3218 5296 50  0000 L CNN
+F 1 "10uf" H 3218 5205 50  0000 L CNN
+F 2 "00_Mes_empreintes:CP_Radial_5*11" H 3138 5100 50  0001 C CNN
+F 3 "~" H 3100 5250 50  0001 C CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 610AF29F
+P 3100 5400
+F 0 "#PWR01" H 3100 5150 50  0001 C CNN
+F 1 "GND" H 3105 5227 50  0000 C CNN
+F 2 "" H 3100 5400 50  0001 C CNN
+F 3 "" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 610AFCA7
+P 3350 4200
+F 0 "#PWR03" H 3350 3950 50  0001 C CNN
+F 1 "GND" H 3355 4027 50  0000 C CNN
+F 2 "" H 3350 4200 50  0001 C CNN
+F 3 "" H 3350 4200 50  0001 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 610B017D
+P 4300 3800
+F 0 "R2" V 4200 3700 50  0000 C CNN
+F 1 "1k" V 4300 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4230 3800 50  0001 C CNN
+F 3 "~" H 4300 3800 50  0001 C CNN
+	1    4300 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3800 4450 3800
+$Comp
+L Device:LED D1
+U 1 1 610B3F7A
+P 4600 3300
+F 0 "D1" V 4639 3182 50  0000 R CNN
+F 1 "LED" V 4548 3182 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4600 3300 50  0001 C CNN
+F 3 "~" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 610B5738
+P 4600 2600
+F 0 "#PWR05" H 4600 2350 50  0001 C CNN
+F 1 "GND" H 4605 2427 50  0000 C CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 610B64EA
+P 4950 3600
+F 0 "R4" V 4850 3600 50  0000 C CNN
+F 1 "100" V 4950 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4880 3600 50  0001 C CNN
+F 3 "~" H 4950 3600 50  0001 C CNN
+	1    4950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 610B8E1B
+P 6825 3350
+F 0 "RV3" H 6755 3304 50  0000 R CNN
+F 1 "100k Depth" H 6755 3395 50  0000 R CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x03_Drill-1.5mm" H 6825 3350 50  0001 C CNN
+F 3 "~" H 6825 3350 50  0001 C CNN
+	1    6825 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 610BC869
+P 7125 3100
+F 0 "R5" V 7025 3100 50  0000 C CNN
+F 1 "10k" V 7125 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7055 3100 50  0001 C CNN
+F 3 "~" H 7125 3100 50  0001 C CNN
+	1    7125 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6975 3100 6825 3100
+Wire Wire Line
+	6825 3100 6825 3200
+Wire Wire Line
+	4050 3800 4050 3250
+$Comp
+L power:+9V #PWR02
+U 1 1 610CC135
+P 3350 3050
+F 0 "#PWR02" H 3350 2900 50  0001 C CNN
+F 1 "+9V" H 3350 3200 50  0000 C CNN
+F 2 "" H 3350 3050 50  0001 C CNN
+F 3 "" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR08
+U 1 1 610CDDF7
+P 6825 3900
+F 0 "#PWR08" H 6825 3750 50  0001 C CNN
+F 1 "+9V" H 6840 4073 50  0000 C CNN
+F 2 "" H 6825 3900 50  0001 C CNN
+F 3 "" H 6825 3900 50  0001 C CNN
+	1    6825 3900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2850 3800
+Wire Wire Line
+	4050 3800 3850 3800
+$Comp
+L Device:R R1
+U 1 1 610D56E1
+P 3750 3250
+F 0 "R1" V 3650 3150 50  0000 C CNN
+F 1 "10k" V 3750 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3680 3250 50  0001 C CNN
+F 3 "~" H 3750 3250 50  0001 C CNN
+	1    3750 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 3250 3350 3400
+Wire Wire Line
+	3350 3250 3600 3250
+Wire Wire Line
+	3900 3250 4050 3250
+Connection ~ 3350 3250
+Wire Wire Line
+	3350 3250 2500 3250
+Wire Wire Line
+	2500 3250 2500 4000
+Wire Wire Line
+	2500 4000 2850 4000
+Wire Wire Line
+	3350 3050 3350 3250
+Wire Wire Line
+	4150 3800 4050 3800
+Connection ~ 4050 3800
+Wire Wire Line
+	4600 2600 4600 2750
+Wire Wire Line
+	3850 3600 4600 3600
+Text Notes 3975 4525 0    50   ~ 0
+Schematic found at :
+Text Notes 3975 4625 0    50   ~ 0
+https://soundbender36.wordpress.com/2018/09/04/external-lfo-circuit-bending/
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 610C1CE5
+P 5900 2025
+F 0 "J1" H 6008 2206 50  0000 C CNN
+F 1 "Power" H 6008 2115 50  0000 C CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x02_Drill-1.5mm" H 5900 2025 50  0001 C CNN
+F 3 "~" H 5900 2025 50  0001 C CNN
+	1    5900 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR06
+U 1 1 610C283D
+P 6350 1975
+F 0 "#PWR06" H 6350 1825 50  0001 C CNN
+F 1 "+9V" H 6350 2125 50  0000 C CNN
+F 2 "" H 6350 1975 50  0001 C CNN
+F 3 "" H 6350 1975 50  0001 C CNN
+	1    6350 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 610C3E9A
+P 6350 2225
+F 0 "#PWR07" H 6350 1975 50  0001 C CNN
+F 1 "GND" H 6355 2052 50  0000 C CNN
+F 2 "" H 6350 2225 50  0001 C CNN
+F 3 "" H 6350 2225 50  0001 C CNN
+	1    6350 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2025 6350 2025
+Wire Wire Line
+	6350 2025 6350 1975
+Wire Wire Line
+	6350 2225 6350 2125
+Wire Wire Line
+	6350 2125 6100 2125
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 610C7529
+P 6350 2025
+F 0 "#FLG01" H 6350 2100 50  0001 C CNN
+F 1 "PWR_FLAG" V 6350 2153 50  0000 L CNN
+F 2 "" H 6350 2025 50  0001 C CNN
+F 3 "~" H 6350 2025 50  0001 C CNN
+	1    6350 2025
+	0    1    1    0   
+$EndComp
+Connection ~ 6350 2025
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 610C7B25
+P 6350 2125
+F 0 "#FLG02" H 6350 2200 50  0001 C CNN
+F 1 "PWR_FLAG" V 6350 2253 50  0000 L CNN
+F 2 "" H 6350 2125 50  0001 C CNN
+F 3 "~" H 6350 2125 50  0001 C CNN
+	1    6350 2125
+	0    1    1    0   
+$EndComp
+Connection ~ 6350 2125
+Wire Wire Line
+	5600 3600 5775 3600
+Wire Wire Line
+	5775 3600 5775 3350
+Connection ~ 5775 3600
+Wire Wire Line
+	5775 3600 5850 3600
+Wire Wire Line
+	7475 3100 7275 3100
+$Comp
+L power:GND #PWR09
+U 1 1 610C8629
+P 7475 3900
+F 0 "#PWR09" H 7475 3650 50  0001 C CNN
+F 1 "GND" H 7480 3727 50  0000 C CNN
+F 2 "" H 7475 3900 50  0001 C CNN
+F 3 "" H 7475 3900 50  0001 C CNN
+	1    7475 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 610C8EA1
+P 3350 4875
+F 0 "SW1" V 3200 4975 50  0000 L CNN
+F 1 "Rate" V 3300 4975 50  0000 L CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x03_Drill-1.5mm" H 3350 4875 50  0001 C CNN
+F 3 "~" H 3350 4875 50  0001 C CNN
+	1    3350 4875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 610CD56B
+P 3575 5250
+F 0 "C2" H 3693 5296 50  0000 L CNN
+F 1 "22uf" H 3693 5205 50  0000 L CNN
+F 2 "00_Mes_empreintes:CP_Radial_5*11" H 3613 5100 50  0001 C CNN
+F 3 "~" H 3575 5250 50  0001 C CNN
+	1    3575 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 610CD571
+P 3575 5400
+F 0 "#PWR04" H 3575 5150 50  0001 C CNN
+F 1 "GND" H 3580 5227 50  0000 C CNN
+F 2 "" H 3575 5400 50  0001 C CNN
+F 3 "" H 3575 5400 50  0001 C CNN
+	1    3575 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4275 4600 4200
+Wire Wire Line
+	4600 4275 3850 4275
+Wire Wire Line
+	3350 4675 2750 4675
+Wire Wire Line
+	2750 3600 2750 4675
+Wire Wire Line
+	3350 4675 3850 4675
+Wire Wire Line
+	3850 4675 3850 4275
+Connection ~ 3350 4675
+Connection ~ 3850 4275
+Wire Wire Line
+	3575 5100 3575 5075
+Wire Wire Line
+	3575 5075 3450 5075
+Wire Wire Line
+	3100 5100 3100 5075
+Wire Wire Line
+	3100 5075 3250 5075
+Connection ~ 4600 3600
+Wire Wire Line
+	4600 3600 4800 3600
+Wire Wire Line
+	6825 3500 6825 3600
+Connection ~ 6825 3600
+Wire Wire Line
+	6825 3600 6825 3900
+Wire Wire Line
+	6150 3350 6000 3350
+Text Notes 3975 4725 0    50   ~ 0
+Modified by Plop
+Wire Wire Line
+	4600 3450 4600 3600
+Wire Wire Line
+	4600 3150 4600 3050
+Text Notes 2500 2000 0    118  ~ 24
+555 LFO
+$Comp
+L Device:R_POT_TRIM RV4
+U 1 1 6110DD34
+P 6300 3350
+F 0 "RV4" V 6625 3600 50  0000 C CNN
+F 1 "Depth_TRIM" V 6625 3275 50  0000 C CIN
+F 2 "00_Mes_empreintes:Trimot_RM-065" H 6300 3350 50  0001 C CNN
+F 3 "~" H 6300 3350 50  0001 C CNN
+	1    6300 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3200 6300 3100
+Connection ~ 6000 3350
+Wire Wire Line
+	6000 3350 5775 3350
+Wire Wire Line
+	6300 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 3350
+Wire Wire Line
+	6150 3600 6825 3600
+Wire Wire Line
+	6675 3350 6450 3350
+$Comp
+L 00_Mes_symboles:Jack_mono J2
+U 1 1 61118EF1
+P 7650 3100
+F 0 "J2" H 7347 3061 50  0000 R CNN
+F 1 "Jack_mono" H 7347 2970 50  0000 R CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x02_Drill-1.5mm" H 7625 3050 50  0001 C CNN
+F 3 "~" H 7625 3050 50  0001 C CNN
+	1    7650 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7475 3300 7475 3900
+$Comp
+L Device:R_Variable RV2
+U 1 1 610EBE01
+P 5450 3600
+F 0 "RV2" V 5715 3600 50  0000 C CNN
+F 1 "10k Shape" V 5624 3600 50  0000 C CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x02_Drill-1.5mm" V 5380 3600 50  0001 C CNN
+F 3 "~" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Variable RV1
+U 1 1 610EC4B8
+P 4600 4050
+F 0 "RV1" H 4728 4096 50  0000 L CNN
+F 1 "100k Speed" H 4728 4005 50  0000 L CNN
+F 2 "00_Mes_empreintes:Wire_Pad_1x02_Drill-1.5mm" V 4530 4050 50  0001 C CNN
+F 3 "~" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3600 5300 3600
+$EndSCHEMATC
